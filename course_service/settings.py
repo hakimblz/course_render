@@ -145,3 +145,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #     "http://localhost:8080",
 #     "http://localhost:8084",
 # ]
+STUDENT_SERVICE_URL = os.environ.get("STUDENT_SERVICE_URL")
