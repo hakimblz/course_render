@@ -90,7 +90,7 @@ WSGI_APPLICATION = 'course_service.wsgi.application'
 # }
 DATABASES = {
     'default': dj_database_url.config(
-        default=os.environ.get('postgresql://universitydb_sm9z_user:5KOdezeiK2ajPYyC2YbwM3WlEDCUfs6n@dpg-d4mujjili9vc73f5o0u0-a.frankfurt-postgres.render.com/universitydb_sm9z'),
+        default=os.environ.get("DATABASE_URL"),
         conn_max_age=600,
         ssl_require=True
     )
