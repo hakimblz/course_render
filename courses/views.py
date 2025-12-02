@@ -111,7 +111,7 @@ import requests
 # 👉 URL du microservice Spring Boot (Student Service)
 STUDENT_SERVICE_URL = "https://student-render-egkh.onrender.com/student/findStudId/"
   # exemple de microservice student
-COURSE_SERVICE_URL = "http://localhost:8090/api/courses/" 
+COURSE_SERVICE_URL = "https://course-render-jak0.onrender.com/courses/" 
 
 # ====================================================
 
