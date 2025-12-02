@@ -107,9 +107,10 @@ from rest_framework import status
 from .models import Course, StudentCourse
 from .serializers import CourseSerializer, StudentCourseSerializer
 import requests
+import os
 
 # 👉 URL du microservice Spring Boot (Student Service)
-STUDENT_SERVICE_URL = "https://student-render-egkh.onrender.com/student/findStudId/"
+STUDENT_SERVICE_URL = os.environ.get("STUDENT_SERVICE_URL", "https://student-render-egkh.onrender.com/student/findStudId/")
   # exemple de microservice student
 COURSE_SERVICE_URL = "https://course-render-jak0.onrender.com/courses/" 
 
